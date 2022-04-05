@@ -1,6 +1,9 @@
 <template>
   <div class="home">
     <div class="home-container">
+      <div class="home-container__logo">
+        <img src="@/assets/tmp-logo.jpg">
+      </div>
       <div class="home-container__title">
         TMP(つくばミュージックプロジェクト)
       </div>
@@ -32,15 +35,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: left;
+  text-align: center;
 }
 .home-container a {
   cursor: pointer;
 }
-.home-container img {
-  width: 24px;
+.home-container__logo img {
+  width: 480px;
 }
 .home-container__title {
+  margin-top: 20px;
   font-size: 22px;
 }
 .home-container__sentence {
@@ -49,9 +53,12 @@
 .home-container__sns {
   margin-top: 18px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+}
+.home-container__sns img {
+  width: 24px;
 }
 .home-container__sns-twitter, .home-container__sns-insta {
-  margin-right: 16px;
+  margin: 0px 16px;
 }
 </style>
