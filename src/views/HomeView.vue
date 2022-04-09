@@ -17,6 +17,9 @@
         <a href="https://www.instagram.com/tsukuba_music_p/" class="home-container__sns-insta">
           <img src="@/assets/insta.png">
         </a>
+        <a href="https://note.com/tsukuba_music_p/" class="home-container__sns-note">
+          <img src="@/assets/note.png">
+        </a>
       </div>
     </div>
   </div>
@@ -56,9 +59,24 @@
   justify-content: center;
 }
 .home-container__sns img {
-  width: 24px;
+  width: 36px;
+  border-radius: 4px;
 }
-.home-container__sns-twitter, .home-container__sns-insta {
-  margin: 0px 16px;
+.home-container__sns-twitter, .home-container__sns-insta, .home-container__sns-note {
+  margin: 24px 32px;
+}
+@media screen and (max-width: 480px) {
+  .home-container {
+    text-align: left;
+  }
+  .home-container__title {
+    font-size: 17px;
+  }
+  .home-container__sentence {
+    font-size: 14px;
+  }
+  .home-container__logo img {
+    width: 320px;
+  }
 }
 </style>
